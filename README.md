@@ -1,4 +1,4 @@
 # hello-world
 First (not really true) test repo
 
-Prova di una modifica e relativo commit sul nuovo branch!!! :)
+Questo e' un repo di prova per testare e fare esperimenti sulle funzionalita' di github e di git
