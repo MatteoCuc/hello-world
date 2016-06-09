@@ -1,12 +1,12 @@
 Istruzioni:
 
-- per committare un file da locale al repo github:
-git add .
-git commit -m "breve descrizione"
-git push
+- Per committare un file da locale al repo github:
+ - git add .
+ - git commit -m "breve descrizione"
+ - git push
 
-- per clonare un progetto in locale creato in github:
-entrare in una cartella dove si vuole clonare il progetto
-git clone https://github.com/utente/repositoryName
-entrare nella cartella appena creata con il clone
-lavorare e fare eventuali commit
+- Per clonare un progetto in locale creato in github:
+ - entrare in una cartella dove si vuole clonare il progetto
+ - git clone https://github.com/utente/repositoryName
+ - entrare nella cartella appena creata con il clone
+ - lavorare e fare eventuali commit
