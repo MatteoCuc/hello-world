@@ -1,4 +1,6 @@
 ciao, 
-questo è un nuovo documento di testo fatto in locale.
+questo e' un nuovo documento di testo fatto in locale.
 
 Seconda modifica, fatta assieme alla creazione del secondo file
+
+Terza modifica: fatta assieme all'aggiunta del nuovissimo.txt files
