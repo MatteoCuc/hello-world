@@ -1,0 +1,2 @@
+ciao, 
+questo è un nuovo documento di testo fatto in locale.
