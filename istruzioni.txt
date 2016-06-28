@@ -17,3 +17,16 @@ Istruzioni:
 
  - Vedere le differenze
   - git diff
+
+- Se un file presenta conflitti dopo aver fatto il pull, aprire il file, fare il merge dei conflitti
+	committarlo.
+	(
+		Comandi utili di vim:
+			- dd delete like
+			- :wq Write file to disk and quit the editor
+			- :q! Quit 
+			- a Append text following current cursor position
+			- A Append text to the end of current line
+			- i Insert text before the current cursor position
+			- I Insert text at the beginning of the cursor line
+	)
