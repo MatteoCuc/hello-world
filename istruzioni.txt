@@ -1,7 +1,7 @@
 Istruzioni:
 
 - Per committare un file da locale al repo github:
- - git add .
+ - git add .  (oppure git add nomefile.estensione)
  - git commit -m "breve descrizione"
  - git push
 
@@ -10,3 +10,10 @@ Istruzioni:
  - git clone https://github.com/utente/repositoryName
  - entrare nella cartella appena creata con il clone
  - lavorare e fare eventuali commit
+
+
+ - Per vedere lo status dei file locali rispetto a quelli committati:
+  - git status
+
+ - Vedere le differenze
+  - git diff
