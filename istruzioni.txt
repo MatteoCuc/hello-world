@@ -29,4 +29,5 @@ Istruzioni:
 			- A Append text to the end of current line
 			- i Insert text before the current cursor position
 			- I Insert text at the beginning of the cursor line
+			- / per cercare all'interno del file
 	)
