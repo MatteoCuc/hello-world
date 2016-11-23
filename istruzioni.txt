@@ -22,7 +22,7 @@ Istruzioni:
 	committarlo.
 	(
 		Comandi utili di vim:
-			- dd delete like
+			- dd delete line
 			- :wq Write file to disk and quit the editor
 			- :q! Quit 
 			- a Append text following current cursor position
