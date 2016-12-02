@@ -31,3 +31,5 @@ Istruzioni:
 			- I Insert text at the beginning of the cursor line
 			- / per cercare all'interno del file
 	)
+	
+- Durante i merge il base è quello sul quale io voglio riversare i file!
