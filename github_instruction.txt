@@ -1,35 +1,35 @@
 Istruzioni:
 
-- Per committare un file da locale al repo github:
- - git add .  (oppure git add nomefile.estensione)
- - git commit -m "breve descrizione"
+-- Per committare un file da locale al repo github:
+ - git add .  (oppure: git add namefile1.extension namefile2.extension ....)
+ - git commit -m "desccription"
  - git push
 
-- Per clonare un progetto in locale creato in github:
+-- Per clonare un progetto in locale creato in github:
  - entrare in una cartella dove si vuole clonare il progetto
- - git clone https://github.com/utente/repositoryName
+ - git clone https://github.com/user/repositoryName
  - entrare nella cartella appena creata con il clone
  - lavorare e fare eventuali commit
 
 
- - Per vedere lo status dei file locali rispetto a quelli committati:
+ -- Per vedere lo status dei file locali rispetto a quelli committati:
   - git status
 
- - Vedere le differenze
+ -- Vedere le differenze
   - git diff
 
-- Se un file presenta conflitti dopo aver fatto il pull, aprire il file, fare il merge dei conflitti
+-- Se un file presenta conflitti dopo aver fatto il pull, aprire il file, fare il merge dei conflitti
 	committarlo.
-	(
-		Comandi utili di vim:
-			- dd delete line
-			- :wq Write file to disk and quit the editor
-			- :q! Quit 
-			- a Append text following current cursor position
-			- A Append text to the end of current line
-			- i Insert text before the current cursor position
-			- I Insert text at the beginning of the cursor line
-			- / per cercare all'interno del file
-	)
 	
-- Durante i merge il base è quel ramo sul quale verranno riversati i file!
+-- Durante i merge il base è quel ramo sul quale verranno riversati i file!
+
+
+-- Useful vim command:
+	- dd delete line
+	- :wq Write file to disk and quit the editor
+	- :q! Quit 
+	- a Append text following current cursor position
+	- A Append text to the end of current line
+	- i Insert text before the current cursor position
+	- I Insert text at the beginning of the cursor line
+	- /text search text in the file (press n to next occurence)
