@@ -24,7 +24,23 @@ Istruzioni:
 ========= MERGE ===================
 
 -- Merge (Pull) via github:
-	Durante i merge (pull) il base è quel ramo sul quale verranno riversati i file!
+	Durante i merge (pull) il ramo nella sezione base è quel ramo sul quale verranno riversati i file del
+	ramo nella sezione compare!
+	[ base <- compare ]
+	
+	esempio:
+	ramo [files] - nomi uguali file uguali
+	
+	siuazione iniziale:
+	- r1 [ a b c ]
+	- r2 [ a b d ]
+	
+	pull request - [base:r2      compare:r1] - r2 si tira i file di r1 
+	merge pull request
+	
+	risultato dopo il pull:
+	- r1 [ a b c ]
+	- r2 [ a b c d ]
 
 -- Merge via gitlab:
 	Se nella pagina Merge Requests si trova scritto: "Request to merge A into B",
