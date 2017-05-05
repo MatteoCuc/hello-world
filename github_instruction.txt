@@ -23,14 +23,20 @@ Istruzioni:
 
 ========= MERGE ===================
 
--- Merge via github:
-	Durante i merge il base è quel ramo sul quale verranno riversati i file!
+-- Merge (Pull) via github:
+	Durante i merge (pull) il base è quel ramo sul quale verranno riversati i file!
 
-- MERGE via gitlab:
+-- Merge via gitlab:
 	Se nella pagina Merge Requests si trova scritto: "Request to merge A into B",
 	alla fine del merge e alla correzione di eventuali conflitti questo è
 	cià che si ottiene: (pagona Network) "Merge branch 'B' into 'A'" ovvero che
 	il ramo 'B' è stato riversato nel ramo 'A'
+
+
+-- SourceTree
+Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posizionati sul ramo S.
+
+
 
 
 -- Useful vim command:
