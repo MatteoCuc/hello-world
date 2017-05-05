@@ -20,8 +20,11 @@ Istruzioni:
 
 -- Se un file presenta conflitti dopo aver fatto il pull, aprire il file, fare il merge dei conflitti
 	committarlo.
-	
--- Durante i merge il base è quel ramo sul quale verranno riversati i file!
+
+========= MERGE ===================
+
+-- Merge via github:
+	Durante i merge il base è quel ramo sul quale verranno riversati i file!
 
 - MERGE via gitlab:
 	Se nella pagina Merge Requests si trova scritto: "Request to merge A into B",
