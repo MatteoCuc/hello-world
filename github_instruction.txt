@@ -53,14 +53,29 @@ Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posiz
 
 
 -- Merge via gitlab:
+	[source  ->  target]
+
+	esempio:
+	- branch [files] (nomi uguali file uguali)
+	
+	siuazione iniziale
+	- b1 [ a b 1 ]
+	- b2 [ a b 2 ]
+	
+	Merge request - [source:b1      target:b2] 
+	Request to merge b1 into b2.
+	
+	The changes were merged into b2. You can remove the source branch now.
+	risultato dopo il pull
+	- b1 [ a b 1 ]
+	- b2 [ a b 1 2 ]
+
+
+	Da verificare:
 	Se nella pagina Merge Requests si trova scritto: "Request to merge A into B",
 	alla fine del merge e alla correzione di eventuali conflitti questo è
 	cià che si ottiene: (pagona Network) "Merge branch 'B' into 'A'" ovvero che
 	il ramo 'B' è stato riversato nel ramo 'A'
-
-
-
-
 
 
 
