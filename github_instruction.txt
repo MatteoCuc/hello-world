@@ -20,27 +20,37 @@ Istruzioni:
 
 -- Se un file presenta conflitti dopo aver fatto il pull, aprire il file, fare il merge dei conflitti
 	committarlo.
+	
+-- SourceTree
+Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posizionati sul ramo S.
 
-========= MERGE ===================
+============= MERGE ===================
 
 -- Merge (Pull) via github:
 	Durante i merge (pull) il ramo nella sezione base è quel ramo sul quale verranno riversati i file del
-	ramo nella sezione compare!
-	[ base <- compare ]
+	ramo nella sezione compare! [ base <- compare ]
 	
 	esempio:
-	ramo [files] - nomi uguali file uguali
+	- ramo [files] (nomi uguali file uguali)
 	
-	siuazione iniziale:
+	siuazione iniziale
 	- r1 [ a b c ]
 	- r2 [ a b d ]
 	
 	pull request - [base:r2      compare:r1] - r2 si tira i file di r1 
 	merge pull request
 	
-	risultato dopo il pull:
+	risultato dopo il pull
 	- r1 [ a b c ]
 	- r2 [ a b c d ]
+	
+	ramo r1 può quindi essere eliminato.
+	
+-- Merge via sourceTree:
+	Dal ramo corrente (quello attuale di lavoro) (es: r2) premere Unisci.
+	Selezionare poi ciò che si vuole unire al ramo corrente (es: r1).
+	In r2 (corrente) vengono tirati i file di r1.
+
 
 -- Merge via gitlab:
 	Se nella pagina Merge Requests si trova scritto: "Request to merge A into B",
@@ -49,8 +59,7 @@ Istruzioni:
 	il ramo 'B' è stato riversato nel ramo 'A'
 
 
--- SourceTree
-Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posizionati sul ramo S.
+
 
 
 
