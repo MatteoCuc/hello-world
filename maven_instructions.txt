@@ -1,0 +1,8 @@
+-- Quando si crea un progetto java di utilità e lo si vuole poi utilizzare
+come libreria jar in altri progetti:
+
+mvn compile install (Ecipse Goal:compile install) (verrà installato e salvato nel repository maven locale m2)
+
+
+-- Quando si fa un plugin elasticsearch e lo si vuole zippare:
+mvn package
