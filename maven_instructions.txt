@@ -4,5 +4,7 @@
 
 -- Quando si fa un plugin elasticsearch e lo si vuole zippare:
   mvn package
+oppure
+  mvn clean package
   
   nel pom.xml però deve essere presente la libreria apposita
