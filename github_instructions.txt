@@ -73,12 +73,105 @@ Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posiz
 	- b1 [ a b 1 ]
 	- b2 [ a b 1 2 ]
 
+	_________
+	Conflitti:
+	
+	esempio:
+	
+	siuazione iniziale
+	- b1 [ a ]
+		a: 
+		test su b1
+		1
+		2
+		3
+		4
+		b1
+		5
+		6
+			
+	- b2 [ a b ]
+		a:
+		test su b2
+		1
+		2
+		3
+		4
+		5
+		
+		b: vuoto
+		
+	Merge request - [source:b1      target:b2]
+	Request to merge b1 into b2.
+	This merge request contains merge conflicts.
+	
+	Resolve conflict.
+	Showing 2 conflicts between b1 and b2:
+	
+	
+	Interactive mode (source version è segnata come our)
+		- source version	vs		- target version
+		HEAD//our changes			origin//their changes
+		test su b1				test su b2
+		1					1
+		2					2
+		3					3
+		4					4
+		HEAD//our changes 			origin//their changes
+		b1					5
+		5		
+		6
+	
+	Edit inline
+		<<<<<<< a.txt
+		test su b1
+		=======
+		test su b2
+		>>>>>>> a.txt
+		1
+		2
+		3
+		4
+		<<<<<<< a.txt
+		b1
+		5
+		6
+		=======
+		5
+		>>>>>>> a.txt
+		
+		quindi:
+		<<<<<<< nome file in conflitto (inizio conflitto)
+		parte di source version in conflitto
+		=======
+		parte di target version in conflitto
+		>>>>>>> nome file in conflitto (fine conflitto)
+		
+	
+	Risolvere i conflitti mantenendo la parte interessata.
+	Commit changes.
+	Accept Merge Request.
+	
+	Risultato:
+	- b1 [ a ]
+	- b2 [ a ]
+	I file a sono identici.
+	
+	I due branch b1 e b2 sono perfettamente allineati e la versione definitiva
+	è quella risultante dal portare la versione di b1 in b1 (il file b è stato
+	eliminato) e dalla selezione delle parti da mantenere nei conflitti.
+	I passaggi nel network graph sono infatti due:
+	Merge branch 'b2' into 'b1'
+	Merge branch 'b1' into 'b2'.
+		
 
-	Da verificare:
-	Se nella pagina Merge Requests si trova scritto: "Request to merge A into B",
-	alla fine del merge e alla correzione di eventuali conflitti questo è
-	cià che si ottiene: (pagina Network) "Merge branch 'B' into 'A'" ovvero che
-	il ramo 'B' è stato riversato nel ramo 'A'
+		
+
+	(((((Da verificare:
+		Se nella pagina Merge Requests si trova scritto: "Request to merge A into B",
+		alla fine del merge e alla correzione di eventuali conflitti questo è
+		cià che si ottiene: (pagina Network) "Merge branch 'B' into 'A'" ovvero che
+		il ramo 'B' è stato riversato nel ramo 'A')))))
 
 
 
