@@ -51,6 +51,8 @@ Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posiz
 	Selezionare poi ciò che si vuole unire al ramo corrente (es: r1).
 	Nel ramo corrente vengono portate le modifiche del ramo selezionato
 	(es: in r2 (corrente) vengono tirati i file di r1 selezionato).
+	
+	Merge brench r1 into r2.
 
 
 -- Merge via gitlab:
@@ -75,7 +77,7 @@ Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posiz
 	Da verificare:
 	Se nella pagina Merge Requests si trova scritto: "Request to merge A into B",
 	alla fine del merge e alla correzione di eventuali conflitti questo è
-	cià che si ottiene: (pagona Network) "Merge branch 'B' into 'A'" ovvero che
+	cià che si ottiene: (pagina Network) "Merge branch 'B' into 'A'" ovvero che
 	il ramo 'B' è stato riversato nel ramo 'A'
 
 
