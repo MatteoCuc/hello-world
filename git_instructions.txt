@@ -48,12 +48,84 @@ Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posiz
 	
 -- Merge via sourceTree:
 	Dal ramo corrente (quello attuale di lavoro) (es: r2) premere Unisci.
-	Selezionare poi ciò che si vuole unire al ramo corrente (es: r1).
+	Selezionare poi il ramo che si vuole unire a quello corrente (es: r1).
 	Nel ramo corrente vengono portate le modifiche del ramo selezionato
-	(es: in r2 (corrente) vengono tirati i file di r1 selezionato).
+	(es: in r2 (corrente) vengono importate le modifiche di r1 selezionato).
 	
-	Merge brench r1 into r2.
-
+	Merge brench r1 into r2. (Merge brench [selezionato] into [corrente])
+	
+	_________
+	Conflitti:
+	
+	esempio:
+	
+	siuazione iniziale
+	ramo corrente b2
+	- b1 [ a ]
+		a:
+		test su b2
+		1
+		2
+		3 di b1
+		4
+		b1
+		5
+		6 di b1 modifico in b1
+		7 in b1
+		8
+	
+	- b2 [ a ]
+		a:
+		test su b2
+		1
+		2
+		3 di b2
+		4
+		b1
+		5
+		6 di b2 modifico in b2
+		7 in b2
+		8
+	
+	Da ramo b2 seleziono Unisci.
+	Selezionare una commessa di b1.
+	
+	Su b2 ora trovo la situazione:
+		a:
+		test su b2
+		1
+		2
+		<<<<<<< HEAD
+		3 di b2
+		4
+		b1
+		5
+		6 di b2 modifico in b2
+		7 in b2
+		=======
+		3 di b1
+		4
+		b1
+		5
+		6 di b1 modifico in b1
+		7 in b1
+		>>>>>>> b1
+		8
+		
+	
+		quindi:
+		<<<<<<< HEAD ramo corrente (inizio conflitto)
+		parte di codice del ramo corrente in conflitto
+		=======
+		parte di codice del ramo selezionato in conflitto
+		>>>>>>> nome del ramo selezionato (fine conflitto)
+	
+	Risolvo i confilli (su file in file system o su sourceTree) e procedo.
+	Il branch b1 è rimasto invariato mentre b2 si è preso le modifiche
+	di b2 e quelle selezionate dalla risoluzione dei conflitti.
+	
+	Merge branch 'b1' into 'b2'.
+	
 
 -- Merge via gitlab:
 	[source  ->  target]
