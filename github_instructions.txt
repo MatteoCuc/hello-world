@@ -49,7 +49,8 @@ Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posiz
 -- Merge via sourceTree:
 	Dal ramo corrente (quello attuale di lavoro) (es: r2) premere Unisci.
 	Selezionare poi ciò che si vuole unire al ramo corrente (es: r1).
-	In r2 (corrente) vengono tirati i file di r1.
+	Nel ramo corrente vengono portate le modifiche del ramo selezionato
+	(es: in r2 (corrente) vengono tirati i file di r1 selezionato).
 
 
 -- Merge via gitlab:
