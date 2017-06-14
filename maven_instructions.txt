@@ -7,4 +7,4 @@
 oppure
   mvn clean package
   
-  nel pom.xml però deve essere presente la libreria apposita
+  nel pom.xml però deve essere presente la libreria maven apposta: maven-assembly-plugin
