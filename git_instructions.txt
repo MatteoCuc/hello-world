@@ -247,7 +247,7 @@ Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posiz
 
 
 
--- Useful vim command:
+-- Useful vim command:	
 	- dd delete line
 	- :wq Write file to disk and quit the editor
 	- :q! Quit 
@@ -256,3 +256,4 @@ Per creare un ramo D a partire da un altro ramo S, essere sicuri di essere posiz
 	- i Insert text before the current cursor position
 	- I Insert text at the beginning of the cursor line
 	- /text search text in the file (press n to next occurence)
+	- ESC: exit from edit mode
