@@ -2,7 +2,7 @@ Istruzioni:
 
 -- Per committare un file da locale al repo github:
  - git add .  (oppure: git add namefile1.extension namefile2.extension ....)
- - git commit -m "desccription"
+ - git commit -m "description"
  - git push
 
 -- Per clonare un progetto in locale creato in github:
