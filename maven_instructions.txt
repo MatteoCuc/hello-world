@@ -2,6 +2,10 @@
   mvn compile install (Ecipse Goals:compile install) (verrà installato e salvato nel repository maven locale m2)
 
 
+-- comandi:
+  Ecipse Goals:eclipse:eclipse
+  Ecipse Goals:clean
+
 -- Quando si fa un plugin elasticsearch e lo si vuole zippare:
   mvn package
 oppure
